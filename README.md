@@ -1,6 +1,8 @@
 # Rig Multi Agent
 
-A example project demonstrating how to use the Rig framework with xAI and SurrealDB for building AI agents.
+An example project demonstrating how to use the Rig framework and SurrealDB for building AI multi-agent executions.
+
+This example uses two data sets, a customer table and a feature request table. It executes a prompt to prioritize feature requests. The Map agent splits the question into two sub questions, one for fetching customers by ARR, and another for fetching feature requests by urgency. The Reduce agent combines the results from the Map agent and provides a prioritized list of feature requests.
 
 ## Setup
 

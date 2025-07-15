@@ -42,7 +42,5 @@ pub async fn map<S: Display>(
         .await
         .expect("Failed to prompt grok-3-mini");
 
-    // let response = "{\"movie_lens\":\"What are common themes in highly rated sci-fi movies from the early 2000s?\",\"amazon_reviews\":\"What are common themes in highly rated sci-fi movies from the early 2000s?\"}";
-
     serde_json::from_str::<SubQuestions>(&response).unwrap()
 }
